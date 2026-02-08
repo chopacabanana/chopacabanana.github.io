@@ -6,6 +6,35 @@
         <link href="index.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <title>Valentine's Day Card</title>
+
+        <style>
+            @media (max-width: 480px) {
+                .envelope-wrapper {
+                    height: auto;
+                    transform: scale(0.8);
+                }
+
+                #envelope {
+                    top: 30%;
+                }
+
+                .reset button {
+                    min-width: 120px;
+                    font-size: 12px;
+                    margin-top: 40px;
+                }
+
+                .valentine {
+                    font-size: 32px;
+                    margin: 30px 10px;
+                    line-height: 1.2;
+                }
+
+                .words {
+                    font-size: 12px;
+                }
+            }
+        </style>
     </head>
     <body>
         <div class="envelope-wrapper">
@@ -25,11 +54,14 @@
                 </div>
             </div>
         </div>
+
         <div class="reset">
             <button id="open">Open</button>
             <button id="reset">Close</button>
         </div>
+
         <h1 class="valentine">Happy Valentine's Day Baby!</h1>
+
         <script src="index.js"></script>
     </body>
 </html>
